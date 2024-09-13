@@ -17,7 +17,9 @@ A arquitetura hexagonal, também conhecida como arquitetura de portas e adaptado
 ### Adaptadores
 - `InverterCripto:`: Implementa a interface ProvedorCripto, fornecendo uma implementação específica dos métodos de criptografia. A classe concreta InverterCripto ou RealCripto é instanciada conforme necessário, mas a aplicação interage apenas com a interface ProvedorCripto.
 
-- `UserCollectionInMemory`: Implementa a interface ColecaoUsuario e fornece uma implementação em memória para armazenar e recuperar usuários.
+- `ColecaoUsuarioMemoria`: Implementa a interface ColecaoUsuario e fornece uma implementação em memória para armazenar e recuperar usuários.
+
+- `RealCripto`: Implementa a interface ProvedorCripto, fornecendo uma implementação concreta para as operações de criptografia e comparação de senhas. Utiliza a biblioteca bcrypt para gerar e verificar hashes de senhas.
 
 ## Rodando localmente
 Para executar, você precisará de uma instalação recente do Deno. Em seguida, basta executar o seguinte comando na raiz do projeto:
