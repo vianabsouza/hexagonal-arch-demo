@@ -1,8 +1,11 @@
+import InverterCripto from "./temp/cripto-inverter.ts";
 import LoginUsuario from "./user/service/user-login.ts";
 import RegistrarUsuario from "./user/service/user-registration.ts";
 
+const provedorCripto = new InverterCripto();
+
 // Registrar usuario
-const registrar = new RegistrarUsuario()
+const registrar = new RegistrarUsuario(provedorCripto)
 await registrar.executar({
     nome: 'Barbara',
     email: 'barbara@exemolo.com',
@@ -10,7 +13,7 @@ await registrar.executar({
 })
 
 // Login usuario
-const login = new LoginUsuario()
+const login = new LoginUsuario(provedorCripto)
 const usuario = await login.executar({
     email: 'barbara@exemolo.com',
     senha: '123456',
