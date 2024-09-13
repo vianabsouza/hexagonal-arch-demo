@@ -1,4 +1,4 @@
-import CasoDeUso from "../../shared/use-case.ts"
+import CasoDeUso from "../../../shared/use-case.ts"
 import ColecaoUsuario from "../data/user-collection.ts";
 import ProvedorCripto from "../model/cripto-provider.ts";
 import Usuario from "../model/user.ts";

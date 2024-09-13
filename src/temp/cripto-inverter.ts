@@ -1,4 +1,4 @@
-import ProvedorCripto from "../user/model/cripto-provider.ts";
+import ProvedorCripto from "../core/user/model/cripto-provider.ts";
 
 export default class InverterCripto implements ProvedorCripto {
   // deno-lint-ignore require-await
