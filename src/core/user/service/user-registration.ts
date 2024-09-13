@@ -1,5 +1,5 @@
 import CasoDeUso from "../../shared/use-case.ts";
-import ProvedorCripto from "../model/cripto-provider.ts";
+import ProvedorCripto from "../model/crypto-provider.ts";
 import ColecaoUsuario from "../model/user-collection-repository.ts";
 import Usuario from "../model/user.ts";
 
