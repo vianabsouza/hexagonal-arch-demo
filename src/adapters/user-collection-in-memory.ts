@@ -1,5 +1,5 @@
-import ColecaoUsuario from "../model/user-collection-repository.ts";
-import Usuario from "../model/user.ts";
+import ColecaoUsuario from "../core/user/model/user-collection-repository.ts";
+import Usuario from "../core/user/model/user.ts";
 
 export default class ColecaoUsuarioMemoria implements ColecaoUsuario{
   static readonly usuarios: Usuario[] = []

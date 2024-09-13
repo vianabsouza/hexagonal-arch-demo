@@ -1,5 +1,5 @@
 import InverterCripto from "./adapters/cripto-inverter.ts";
-import ColecaoUsuarioMemoria from "./core/user/data/user-collection-in-memory.ts";
+import ColecaoUsuarioMemoria from "./adapters/user-collection-in-memory.ts";
 import LoginUsuario from "./core/user/service/user-login.ts";
 import RegistrarUsuario from "./core/user/service/user-registration.ts";
 
