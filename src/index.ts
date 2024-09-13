@@ -1,4 +1,4 @@
-import InverterCripto from "./temp/cripto-inverter.ts";
+import InverterCripto from "./adapters/cripto-inverter.ts";
 import LoginUsuario from "./core/user/service/user-login.ts";
 import RegistrarUsuario from "./core/user/service/user-registration.ts";
 
