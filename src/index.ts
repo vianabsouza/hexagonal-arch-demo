@@ -1,9 +1,9 @@
-import InverterCripto from "./adapters/cripto-inverter.ts";
+import RealCripto from "./adapters/cripto-real.ts";
 import ColecaoUsuarioMemoria from "./adapters/user-collection-in-memory.ts";
 import LoginUsuario from "./core/user/service/user-login.ts";
 import RegistrarUsuario from "./core/user/service/user-registration.ts";
 
-const provedorCripto = new InverterCripto();
+const provedorCripto = new RealCripto();
 const colecaoUsuario = new ColecaoUsuarioMemoria();
 
 // Registrar usuario
